@@ -1,0 +1,16 @@
+# JPEG
+*.jpg
+*.jpeg
+*.jpe
+
+# Portable Network Graphics
+*.png
+
+# Tagged Image File Format
+*.tiff
+*.tif
+
+# Scalable Vector Graphics
+*.svg
+*.svgz
+
