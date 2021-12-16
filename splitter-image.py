@@ -3,7 +3,6 @@ import image_slicer
 import os.path
 from PIL import Image
 
-
 def split_img(namedir,nameimage, p):
   path = '/Users/natalka/PycharmProjects/image_registration_algorithm'
   path_dir = os.path.join(path, namedir)
@@ -24,14 +23,13 @@ def merge_img(namedir):
     image_new = Image.new('RBG', (path_img.width))
   return
 
-
 def generator_tiff(img):
   im = Image.open(img)
   im.save("frame-2.tiff", 'TIFF')
   return "Done"
 
 # generator_tiff(img)
-#test
+# test
 split_img("f3","frame-3.jpg", 4)
 list_f2 = ['f2_01_01.png', 'f2_01_02.png', 'f2_02_01.png', 'f2_02_02.png']
 list_f3 = ['f3_01_01.png', 'f3_01_02.png', 'f3_02_01.png', 'f3_02_02.png']
